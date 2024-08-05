@@ -1,7 +1,7 @@
-import { routerUsuario } from "express";
-import { Usuario } from "../models/Usuario";
+import { Router } from "express";
+import { Usuario } from "../models/Usuario.js";
 
-export const routerUsuario = routerUsuario();
+export const routerUsuario = Router();
 
 routerUsuario.post('/', async (req, res) => {
     const usuario = await Usuario.create(req.body);

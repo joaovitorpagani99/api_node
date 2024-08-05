@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { Consulta } from "../models/Consulta";
+import { Consulta } from "../models/Consulta.js";
 
 export const routerConsulta = Router();
 

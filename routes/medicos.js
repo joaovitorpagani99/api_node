@@ -1,5 +1,5 @@
-import { Medico } from "../models/Medico";
-import { routerMedico } from "express";
+import { Medico } from "../models/Medico.js";
+import { Router } from "express";
 
 export const routerMedico = Router();
 
