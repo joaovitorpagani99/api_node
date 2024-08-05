@@ -1,8 +1,8 @@
-import { connection } from "../config/database";
+import { connection } from "../config/database.js";
 import { DataTypes } from "sequelize";
 
 
-export const Usuario = connection.define("Usuario", {
+export const Usuario = connection.define("usuario", {
     nome: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -15,7 +15,7 @@ export const Usuario = connection.define("Usuario", {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    telefone : {
+    telefone: {
         type: DataTypes.STRING,
         allowNull: false,
     }
